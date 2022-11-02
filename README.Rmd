@@ -5,7 +5,7 @@ params:
   trilha_clean: visualizacao
   turma: 202210-relatorios
   nome_curso: Relatórios e apresentações
-  num_aula: '0'
+  num_aula: '1'
   download_material: 'FALSE'
 ---
 
@@ -24,12 +24,17 @@ path_to_url <- function(path) {
   path |>
     tibble::tibble(file = _) |>
     dplyr::mutate(
-      url = file |>
+      url_code = file |>
+        paste0("https://github.com/curso-r/", params$turma, "/blob/main/", ... = _) |>
+        paste0("[", fs::path_file(file), "](", ... = _, ")"),
+      
+      url_io = file |>
         paste0("https://curso-r.github.io/", params$turma, "/", ... = _) |>
-        paste0("[", fs::path_file(file), "](", ... = _, ")")
+        paste0("[", fs::path_file(file), "](", ... = _, ")"),
     ) |>
-    dplyr::select(url)
+    dplyr::select(url_code, url_io)
 }
+
 ```
 
 ## Informações importantes
@@ -61,18 +66,6 @@ Fora do horário de aula ou monitoria:
 - [Slides](https://curso-r.github.io/main-relatorios/slides/)
 
 
-## Scripts utilizados em aula
-
-```{r}
-pasta <- "exemplos_de_aula/"
-
-pasta |>
-  fs::dir_ls(fail = FALSE) |>
-  path_to_url() |>
-  dplyr::select(Exemplo = url) |>
-  knitr::kable()
-```
-
 ## Práticas
 
 ```{r}
@@ -81,7 +74,6 @@ pasta <- "praticas/"
 pasta |>
   fs::dir_ls(fail = FALSE) |>
   path_to_url() |>
-  dplyr::select(Exemplo = url) |>
   knitr::kable()
 ```
 

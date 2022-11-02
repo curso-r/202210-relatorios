@@ -3,39 +3,41 @@
 
 ## Informações importantes
 
-  - Nosso blog: <https://curso-r.com/blog/>
+-   Nosso blog: <https://curso-r.com/blog/>
 
-  - Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+-   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
     [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
-  - perguntas gerais sobre o curso deverão ser feitas no Classroom.
+-   perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
-  - perguntas sobre R, principalmente as que envolverem código, deverão
+-   perguntas sobre R, principalmente as que envolverem código, deverão
     ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
-  - [Slides](https://curso-r.github.io/main-relatorios/slides/)
-
-## Scripts utilizados em aula
-
-    #> Warning: [ENOENT] Failed to search directory 'exemplos_de_aula': no such file or
-    #> directory
-
-| Exemplo |
-| :------ |
+-   [Slides](https://curso-r.github.io/main-relatorios/slides/)
 
 ## Práticas
 
-    #> Warning: [ENOENT] Failed to search directory 'praticas': no such file or
-    #> directory
-
-| Exemplo |
-| :------ |
+| url_code                                                                                                         | url_io                                                                                                |
+|:-----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| [aula-1-barragens.html](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-barragens.html)   | [aula-1-barragens.html](https://curso-r.github.io/202210-relatorios/praticas/aula-1-barragens.html)   |
+| [aula-1-barragens.qmd](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-barragens.qmd)     | [aula-1-barragens.qmd](https://curso-r.github.io/202210-relatorios/praticas/aula-1-barragens.qmd)     |
+| [aula-1-barragens_files](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-barragens_files) | [aula-1-barragens_files](https://curso-r.github.io/202210-relatorios/praticas/aula-1-barragens_files) |
+| [aula-1-latex.pdf](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-latex.pdf)             | [aula-1-latex.pdf](https://curso-r.github.io/202210-relatorios/praticas/aula-1-latex.pdf)             |
+| [aula-1.Rmd](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.Rmd)                         | [aula-1.Rmd](https://curso-r.github.io/202210-relatorios/praticas/aula-1.Rmd)                         |
+| [aula-1.docx](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.docx)                       | [aula-1.docx](https://curso-r.github.io/202210-relatorios/praticas/aula-1.docx)                       |
+| [aula-1.html](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.html)                       | [aula-1.html](https://curso-r.github.io/202210-relatorios/praticas/aula-1.html)                       |
+| [aula-1.pdf](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.pdf)                         | [aula-1.pdf](https://curso-r.github.io/202210-relatorios/praticas/aula-1.pdf)                         |
+| [aula-1.pptx](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.pptx)                       | [aula-1.pptx](https://curso-r.github.io/202210-relatorios/praticas/aula-1.pptx)                       |
+| [aula-1.qmd](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.qmd)                         | [aula-1.qmd](https://curso-r.github.io/202210-relatorios/praticas/aula-1.qmd)                         |
+| [aula-1_files](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1_files)                     | [aula-1_files](https://curso-r.github.io/202210-relatorios/praticas/aula-1_files)                     |
+| [dados](https://github.com/curso-r/202210-relatorios/blob/main/praticas/dados)                                   | [dados](https://curso-r.github.io/202210-relatorios/praticas/dados)                                   |
+| [images](https://github.com/curso-r/202210-relatorios/blob/main/praticas/images)                                 | [images](https://curso-r.github.io/202210-relatorios/praticas/images)                                 |
 
 ## Material extra
 
@@ -43,12 +45,35 @@ Referências extras relacionadas com o conteúdos das aulas, ou materiais
 que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
-| Aula | Tema           | Descrição                                                                                                        |
-| ---: | :------------- | :--------------------------------------------------------------------------------------------------------------- |
-|    0 | Quarto         | [Documentação do Quarto](https://quarto.org/docs/guide/)                                                         |
-|    0 | Comunidades    | [Discourse da Curso-R](https://discourse.curso-r.com)                                                            |
-|    0 | Trabalho final | [Post com ideias de Bases de dados](https://blog.curso-r.com/posts/2022-06-11-bases-de-dados/)                   |
-|    0 | Pré-curso      | [Tutorial de instalação do R, RStudio, Git](https://www.youtube.com/watch?t=2415&v=fiZStofJqMQ&feature=youtu.be) |
+| Aula | Tema           | Descrição                                                                                                                                                    |
+|-----:|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0 | Quarto         | [Documentação do Quarto](https://quarto.org/docs/guide/)                                                                                                     |
+|    0 | Comunidades    | [Discourse da Curso-R](https://discourse.curso-r.com)                                                                                                        |
+|    0 | Trabalho final | [Post com ideias de Bases de dados](https://blog.curso-r.com/posts/2022-06-11-bases-de-dados/)                                                               |
+|    0 | Pré-curso      | [Tutorial de instalação do R, RStudio, Git](https://www.youtube.com/watch?t=2415&v=fiZStofJqMQ&feature=youtu.be)                                             |
+|    0 | Quarto         | [Quarto - Link de instalação](https://quarto.org/docs/get-started/)                                                                                          |
+|    1 | Tabelas        | [Flextable - tabelas bem formatadas no word](https://ardata-fr.github.io/flextable-book/)                                                                    |
+|    1 | Dúvidas        | [Novo Pipe](https://blog.curso-r.com/posts/2021-05-06-o-novo-pipe-esta-chegando/)                                                                            |
+|    1 | Dúvidas        | [Pipe do tidyverse](https://curso-r.github.io/main-r4ds-1/slides/04-manipulacao.html#14)                                                                     |
+|    1 | Dúvidas        | [Pipe do tidyverse - livro](https://livro.curso-r.com/6-1-o-operador-pipe.html)                                                                              |
+|    1 | Dúvidas        | [Pipe do tidyverse - livro R para Ciência de dados em Espanhol](https://es.r4ds.hadley.nz/pipes.html)                                                        |
+|    1 | Dúvidas        | [Uso dos quatro pontos ::](https://curso-r.github.io/zen-do-r/funcoes-deps.html#quatro-pontos)                                                               |
+|    1 | Introdução     | [Video curto sobre reprex](https://youtu.be/IxlGYVnaGXk)                                                                                                     |
+|    1 | RMarkdown      | [Guia de referência do RMarkdown](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)                                                    |
+|    1 | RMarkdown      | [Capítulo do livro “Ciência de Dados em R”: Relatórios](https://livro.curso-r.com/9-relatorios.html)                                                         |
+|    1 | RMarkdown      | [Folha de cola (cheatsheet): RMarkdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)                                                 |
+|    1 | RMarkdown      | [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)                                                         |
+|    1 | Instalação     | [Dicas de debug do LaTeX](https://github.com/yihui/tinytex/issues/103)                                                                                       |
+|    1 | Tabelas        | [Tabelas com word - exemplo pratico](https://github.com/beatrizmilz/ambi-agua-2823/blob/main/inst/manuscript.Rmd)                                            |
+|    1 | Quarto         | [Exemplo de template de Quarto para apresentações](https://github.com/beatrizmilz/quarto-rladies-theme)                                                      |
+|    1 | dados          | [SIG-BM - Base de dados usada na aula](https://app.anm.gov.br/SIGBM/Publico/ClassificacaoNacionalDaBarragem)                                                 |
+|    1 | Quarto         | [Posto do Yihui sobre RMarkdown e Quarto](https://yihui.org/en/2022/04/quarto-r-markdown/)                                                                   |
+|    1 | Tabelas        | [Livro sobre tabelas em word](https://ardata-fr.github.io/flextable-book/)                                                                                   |
+|    1 | Quarto         | [Galeria do Quarto](https://quarto.org/docs/gallery/)                                                                                                        |
+|    1 | RMarkdown      | [Pagedown - converter html em PDF](https://github.com/rstudio/pagedown)                                                                                      |
+|    1 | Script         | [Script inicial para a prática na aula 1](https://raw.githubusercontent.com/curso-r/main-relatorios/main/praticas/aula_1/exemplo_rmd_qmd/esqueleto-aula-1.R) |
+|    1 | Quarto         | [Opções de chunk - Quarto](https://quarto.org/docs/reference/cells/cells-knitr.html#cell-output)                                                             |
+|    1 | Curiosidades   | [Documentação do Pandoc](https://pandoc.org/)                                                                                                                |
 
 ## Redes sociais da Curso-R
 
