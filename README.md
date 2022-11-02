@@ -3,23 +3,23 @@
 
 ## Informações importantes
 
--   Nosso blog: <https://curso-r.com/blog/>
+  - Nosso blog: <https://curso-r.com/blog/>
 
--   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+  - Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
     [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
--   perguntas gerais sobre o curso deverão ser feitas no Classroom.
+  - perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
--   perguntas sobre R, principalmente as que envolverem código, deverão
+  - perguntas sobre R, principalmente as que envolverem código, deverão
     ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
--   [Slides](https://curso-r.github.io/main-relatorios/slides/)
+  - [Slides](https://curso-r.github.io/main-relatorios/slides/)
 
 ## Scripts utilizados em aula
 
@@ -27,7 +27,7 @@ Fora do horário de aula ou monitoria:
     #> directory
 
 | Exemplo |
-|:--------|
+| :------ |
 
 ## Práticas
 
@@ -35,7 +35,7 @@ Fora do horário de aula ou monitoria:
     #> directory
 
 | Exemplo |
-|:--------|
+| :------ |
 
 ## Material extra
 
@@ -44,7 +44,7 @@ que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
 | Aula | Tema           | Descrição                                                                                                        |
-|-----:|:---------------|:-----------------------------------------------------------------------------------------------------------------|
+| ---: | :------------- | :--------------------------------------------------------------------------------------------------------------- |
 |    0 | Quarto         | [Documentação do Quarto](https://quarto.org/docs/guide/)                                                         |
 |    0 | Comunidades    | [Discourse da Curso-R](https://discourse.curso-r.com)                                                            |
 |    0 | Trabalho final | [Post com ideias de Bases de dados](https://blog.curso-r.com/posts/2022-06-11-bases-de-dados/)                   |
