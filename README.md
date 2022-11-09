@@ -23,21 +23,10 @@ Fora do horário de aula ou monitoria:
 
 ## Práticas
 
-| url_code                                                                                                         | url_io                                                                                                |
-|:-----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
-| [aula-1-barragens.html](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-barragens.html)   | [aula-1-barragens.html](https://curso-r.github.io/202210-relatorios/praticas/aula-1-barragens.html)   |
-| [aula-1-barragens.qmd](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-barragens.qmd)     | [aula-1-barragens.qmd](https://curso-r.github.io/202210-relatorios/praticas/aula-1-barragens.qmd)     |
-| [aula-1-barragens_files](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-barragens_files) | [aula-1-barragens_files](https://curso-r.github.io/202210-relatorios/praticas/aula-1-barragens_files) |
-| [aula-1-latex.pdf](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1-latex.pdf)             | [aula-1-latex.pdf](https://curso-r.github.io/202210-relatorios/praticas/aula-1-latex.pdf)             |
-| [aula-1.Rmd](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.Rmd)                         | [aula-1.Rmd](https://curso-r.github.io/202210-relatorios/praticas/aula-1.Rmd)                         |
-| [aula-1.docx](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.docx)                       | [aula-1.docx](https://curso-r.github.io/202210-relatorios/praticas/aula-1.docx)                       |
-| [aula-1.html](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.html)                       | [aula-1.html](https://curso-r.github.io/202210-relatorios/praticas/aula-1.html)                       |
-| [aula-1.pdf](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.pdf)                         | [aula-1.pdf](https://curso-r.github.io/202210-relatorios/praticas/aula-1.pdf)                         |
-| [aula-1.pptx](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.pptx)                       | [aula-1.pptx](https://curso-r.github.io/202210-relatorios/praticas/aula-1.pptx)                       |
-| [aula-1.qmd](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1.qmd)                         | [aula-1.qmd](https://curso-r.github.io/202210-relatorios/praticas/aula-1.qmd)                         |
-| [aula-1_files](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula-1_files)                     | [aula-1_files](https://curso-r.github.io/202210-relatorios/praticas/aula-1_files)                     |
-| [dados](https://github.com/curso-r/202210-relatorios/blob/main/praticas/dados)                                   | [dados](https://curso-r.github.io/202210-relatorios/praticas/dados)                                   |
-| [images](https://github.com/curso-r/202210-relatorios/blob/main/praticas/images)                                 | [images](https://curso-r.github.io/202210-relatorios/praticas/images)                                 |
+| url_code                                                                         | url_io                                                                |
+|:---------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| [aula_1](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_1) | [aula_1](https://curso-r.github.io/202210-relatorios/praticas/aula_1) |
+| [aula_2](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_2) | [aula_2](https://curso-r.github.io/202210-relatorios/praticas/aula_2) |
 
 ## Material extra
 
