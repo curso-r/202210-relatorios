@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.1.251">
@@ -20,20 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
-<script src="aula-1-barragens_files/libs/clipboard/clipboard.min.js"></script>
-<script src="aula-1-barragens_files/libs/quarto-html/quarto.js"></script>
-<script src="aula-1-barragens_files/libs/quarto-html/popper.min.js"></script>
-<script src="aula-1-barragens_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="aula-1-barragens_files/libs/quarto-html/anchor.min.js"></script>
-<link href="aula-1-barragens_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="aula-1-barragens_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="aula-1-barragens_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="aula-1-barragens_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="aula-1-barragens_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="aula-2-barragens_files/libs/clipboard/clipboard.min.js"></script>
+<script src="aula-2-barragens_files/libs/quarto-html/quarto.js"></script>
+<script src="aula-2-barragens_files/libs/quarto-html/popper.min.js"></script>
+<script src="aula-2-barragens_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="aula-2-barragens_files/libs/quarto-html/anchor.min.js"></script>
+<link href="aula-2-barragens_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="aula-2-barragens_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="aula-2-barragens_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="aula-2-barragens_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="aula-2-barragens_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -59,8 +79,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="objetivos" class="level2">
-<h2 class="anchored" data-anchor-id="objetivos">Objetivos</h2>
+<section id="sec-objetivos" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="sec-objetivos"><span class="header-section-number">1</span> Objetivos</h2>
 <p>Este relatório tem como objetivo apresentar funcionalidades do <em>R Markdown</em> e do <em>Quarto</em>, utilizando dados públicos sobre barragens de mineração no Brasil.</p>
 <p>Os objetivos específicos da análise são:</p>
 <ul>
@@ -68,8 +88,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>fazer um gráfico do número de barragens por categoria de dano potencial associado;</p></li>
 </ul>
 </section>
-<section id="materiais-e-métodos" class="level2">
-<h2 class="anchored" data-anchor-id="materiais-e-métodos">Materiais e métodos</h2>
+<section id="sec-metodos" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sec-metodos"><span class="header-section-number">2</span> Materiais e métodos</h2>
 <p>A base de dados disponibilizada pelo <a href="https://app.anm.gov.br/SIGBM/Publico/ClassificacaoNacionalDaBarragem">SIGBM - Sistema de Gestão de Segurança de Barragem de Mineração</a> - apresenta dados referentes à barragens de mineração no território Brasileiro.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -89,18 +109,22 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </section>
-<section id="barragens-de-mineração-no-brasil" class="level2">
-<h2 class="anchored" data-anchor-id="barragens-de-mineração-no-brasil">Barragens de mineração no Brasil</h2>
-<p>A base do SIGBM foi obtida no dia 01/11/2022 , e apresentou informações referentes à 923 barragens de mineração. A mediana do volume armazenado nas barragens é 128000.</p>
-<div class="cell">
-<div class="cell-output-display">
+<section id="barragens-de-mineração-no-brasil" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="barragens-de-mineração-no-brasil"><span class="header-section-number">3</span> Barragens de mineração no Brasil</h2>
+<p>A base do SIGBM foi obtida no dia 08/11/2022 , e apresentou informações referentes à 923 barragens de mineração. A mediana do volume armazenado nas barragens é 128.000 m3.</p>
+<div id="tbl-top10" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Tabela&nbsp;1: <strong>?(caption)</strong></p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-top10-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-top10" style="flex-basis: 100.0%;justify-content: center;">
 
-<div id="jthrhfocyz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bkjvlrrdoj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#jthrhfocyz) .gt_table {
+:where(#bkjvlrrdoj) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -125,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_heading {
+:where(#bkjvlrrdoj) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -137,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_title {
+:where(#bkjvlrrdoj) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -149,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-:where(#jthrhfocyz) .gt_subtitle {
+:where(#bkjvlrrdoj) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -161,13 +185,13 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-:where(#jthrhfocyz) .gt_bottom_border {
+:where(#bkjvlrrdoj) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_col_headings {
+:where(#bkjvlrrdoj) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -182,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_col_heading {
+:where(#bkjvlrrdoj) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -202,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#jthrhfocyz) .gt_column_spanner_outer {
+:where(#bkjvlrrdoj) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -214,15 +238,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-:where(#jthrhfocyz) .gt_column_spanner_outer:first-child {
+:where(#bkjvlrrdoj) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#jthrhfocyz) .gt_column_spanner_outer:last-child {
+:where(#bkjvlrrdoj) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#jthrhfocyz) .gt_column_spanner {
+:where(#bkjvlrrdoj) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -234,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-:where(#jthrhfocyz) .gt_group_heading {
+:where(#bkjvlrrdoj) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -259,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#jthrhfocyz) .gt_empty_group_heading {
+:where(#bkjvlrrdoj) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -274,15 +298,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#jthrhfocyz) .gt_from_md > :first-child {
+:where(#bkjvlrrdoj) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#jthrhfocyz) .gt_from_md > :last-child {
+:where(#bkjvlrrdoj) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#jthrhfocyz) .gt_row {
+:where(#bkjvlrrdoj) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -301,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#jthrhfocyz) .gt_stub {
+:where(#bkjvlrrdoj) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -314,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#jthrhfocyz) .gt_stub_row_group {
+:where(#bkjvlrrdoj) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -328,11 +352,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-:where(#jthrhfocyz) .gt_row_group_first td {
+:where(#bkjvlrrdoj) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#jthrhfocyz) .gt_summary_row {
+:where(#bkjvlrrdoj) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -342,16 +366,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#jthrhfocyz) .gt_first_summary_row {
+:where(#bkjvlrrdoj) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_first_summary_row.thick {
+:where(#bkjvlrrdoj) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#jthrhfocyz) .gt_last_summary_row {
+:where(#bkjvlrrdoj) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -361,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_grand_summary_row {
+:where(#bkjvlrrdoj) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -371,7 +395,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#jthrhfocyz) .gt_first_grand_summary_row {
+:where(#bkjvlrrdoj) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,11 +405,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_striped {
+:where(#bkjvlrrdoj) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#jthrhfocyz) .gt_table_body {
+:where(#bkjvlrrdoj) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -394,7 +418,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_footnotes {
+:where(#bkjvlrrdoj) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -408,7 +432,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_footnote {
+:where(#bkjvlrrdoj) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -417,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#jthrhfocyz) .gt_sourcenotes {
+:where(#bkjvlrrdoj) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -431,7 +455,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#jthrhfocyz) .gt_sourcenote {
+:where(#bkjvlrrdoj) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -439,36 +463,36 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#jthrhfocyz) .gt_left {
+:where(#bkjvlrrdoj) .gt_left {
   text-align: left;
 }
 
-:where(#jthrhfocyz) .gt_center {
+:where(#bkjvlrrdoj) .gt_center {
   text-align: center;
 }
 
-:where(#jthrhfocyz) .gt_right {
+:where(#bkjvlrrdoj) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#jthrhfocyz) .gt_font_normal {
+:where(#bkjvlrrdoj) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#jthrhfocyz) .gt_font_bold {
+:where(#bkjvlrrdoj) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#jthrhfocyz) .gt_font_italic {
+:where(#bkjvlrrdoj) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#jthrhfocyz) .gt_super {
+:where(#bkjvlrrdoj) .gt_super {
   font-size: 65%;
 }
 
-:where(#jthrhfocyz) .gt_two_val_uncert {
+:where(#bkjvlrrdoj) .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -477,38 +501,38 @@ ul.task-list li input[type="checkbox"] {
   margin-left: 0.1em;
 }
 
-:where(#jthrhfocyz) .gt_footnote_marks {
+:where(#bkjvlrrdoj) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#jthrhfocyz) .gt_asterisk {
+:where(#bkjvlrrdoj) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#jthrhfocyz) .gt_slash_mark {
+:where(#bkjvlrrdoj) .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-:where(#jthrhfocyz) .gt_fraction_numerator {
+:where(#bkjvlrrdoj) .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-:where(#jthrhfocyz) .gt_fraction_denominator {
+:where(#bkjvlrrdoj) .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
 }
 </style>
 <table class="gt_table">
-  <caption>Dez estados brasileiros com mais barragens cadastradas no SIG-BM</caption>
+  <caption>(a) Dez estados brasileiros com mais barragens cadastradas no SIG-BM</caption>
   
   <thead class="gt_col_headings">
     <tr>
@@ -544,14 +568,81 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="aula-1-barragens_files/figure-html/plot-dpa-1.png" class="img-fluid" width="672"></p>
+<div id="fig-dpa" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="aula-2-barragens_files/figure-html/fig-dpa-1.png" class="img-fluid figure-img" width="2100"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;1: Gráfico de dano potencial associado de barragens de mineração no Brasil.</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
+<section id="barragens-em-mg" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="barragens-em-mg"><span class="header-section-number">4</span> Barragens em MG</h2>
+<div class="cell">
 
-</main>
+</div>
+<div class="cell">
+
+</div>
+</section>
+<section id="extras" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="extras"><span class="header-section-number">5</span> EXTRAS!</h2>
+<section id="equações" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="equações"><span class="header-section-number">5.1</span> Equações</h3>
+<p>A equação <span class="math inline">\(4! = 4 \cdot 3 \cdot 2 \cdot 1\)</span> diz que</p>
+<p>A equação <span class="math display">\[4! = 4 \cdot 3 \cdot 2 \cdot 1\]</span> diz que</p>
+</section>
+<section id="referências" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="referências"><span class="header-section-number">5.2</span> Referências</h3>
+<ul>
+<li>Citando papers</li>
+</ul>
+<p>Segundo <span class="citation" data-cites="leao2022a">LEÃO; SANTIAGO (<a href="#ref-leao2022a" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="leao2022a">(<a href="#ref-leao2022a" role="doc-biblioref">LEÃO; SANTIAGO, 2022</a>)</span>, <span class="citation" data-cites="leao2022a">(<a href="#ref-leao2022a" role="doc-biblioref">2022</a>)</span></p>
+<p><span class="citation" data-cites="silvaSegurancaBarragensOs2021 leao2022a">(<a href="#ref-leao2022a" role="doc-biblioref">LEÃO; SANTIAGO, 2022</a>; <a href="#ref-silvaSegurancaBarragensOs2021" role="doc-biblioref">SILVA; SILVA, 2021</a>)</span></p>
+<p><span class="citation" data-cites="silvaSegurancaBarragensOs2021">SILVA; SILVA (<a href="#ref-silvaSegurancaBarragensOs2021" role="doc-biblioref">2021</a>)</span></p>
+<ul>
+<li>Citar pacotes!</li>
+</ul>
+<p><span class="citation" data-cites="r-base">R CORE TEAM (<a href="#ref-r-base" role="doc-biblioref">2022</a>)</span></p>
+<p><span class="citation" data-cites="r-tidyverse">WICKHAM <em>et al.</em> (<a href="#ref-r-tidyverse" role="doc-biblioref">2019</a>)</span></p>
+<p>diversos pacotes foram usados <span class="citation" data-cites="R-janitor R-dplyr">(<a href="#ref-R-janitor" role="doc-biblioref">FIRKE, 2021</a>; <a href="#ref-R-dplyr" role="doc-biblioref">WICKHAM <em>et al.</em>, 2022</a>)</span></p>
+<div class="cell">
+
+</div>
+</section>
+<section id="referência-cruzada" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="referência-cruzada"><span class="header-section-number">5.3</span> Referência cruzada</h3>
+<p>Na tabela <a href="#tbl-top10">Tabela&nbsp;1</a> vemos que o estado com o maior número de barragens é MG.</p>
+<p>No gráfico <a href="#fig-dpa">Figura&nbsp;1</a> vemos que …</p>
+<p>Nas secoes <a href="#sec-metodos">Seção&nbsp;2</a> e <a href="#sec-objetivos">Seção&nbsp;1</a> ….</p>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-R-janitor" class="csl-entry" role="doc-biblioentry">
+FIRKE, S. <strong><a href="https://github.com/sfirke/janitor">janitor: Simple Tools for Examining and Cleaning Dirty Data</a></strong>. [s.l: s.n.]
+</div>
+<div id="ref-leao2022a" class="csl-entry" role="doc-biblioentry">
+LEÃO, S. R.; SANTIAGO, A. M. dos S. Tailings dam scenario: knowing to avoid new catastrophes. <strong>Ambiente &amp; Sociedade</strong>, v. 25, 2022. Disponível em: &lt;<a href="http://dx.doi.org/10.1590/1809-4422asoc20210066r1vu2022L2OA">http://dx.doi.org/10.1590/1809-4422asoc20210066r1vu2022L2OA</a>&gt;. Acesso em: 8 nov. 2022.
+</div>
+<div id="ref-r-base" class="csl-entry" role="doc-biblioentry">
+R CORE TEAM. <strong><a href="https://www.R-project.org/">R: A Language and Environment for Statistical Computing</a></strong>. Vienna, Austria: R Foundation for Statistical Computing, 2022.
+</div>
+<div id="ref-silvaSegurancaBarragensOs2021" class="csl-entry" role="doc-biblioentry">
+SILVA, E. L. e.; SILVA, M. A. da. Segurança de barragens e os riscos potenciais à saúde pública. <strong>Saúde em Debate</strong>, v. 44, p. 242–261, jul. 2021. Disponível em: &lt;<a href="http://www.scielo.br/j/sdeb/a/GxCcNJjsWLzNqmN9HbsFgqG/?lang=pt">http://www.scielo.br/j/sdeb/a/GxCcNJjsWLzNqmN9HbsFgqG/?lang=pt</a>&gt;. Acesso em: 8 nov. 2022.
+</div>
+<div id="ref-r-tidyverse" class="csl-entry" role="doc-biblioentry">
+WICKHAM, H.; AVERICK, M.; BRYAN, J.; CHANG, W.; MCGOWAN, L. D.; FRANÇOIS, R.; GROLEMUND, G.; HAYES, A.; HENRY, L.; HESTER, J.; KUHN, M.; PEDERSEN, T. L.; MILLER, E.; BACHE, S. M.; MÜLLER, K.; OOMS, J.; ROBINSON, D.; SEIDEL, D. P.; SPINU, V.; TAKAHASHI, K.; VAUGHAN, D.; WILKE, C.; WOO, K.; YUTANI, H. <a href="https://doi.org/10.21105/joss.01686">Welcome to the <span>tidyverse</span></a>. <strong>Journal of Open Source Software</strong>, v. 4, n. 43, p. 1686, 2019.
+</div>
+<div id="ref-R-dplyr" class="csl-entry" role="doc-biblioentry">
+WICKHAM, H.; FRANÇOIS, R.; HENRY, L.; MÜLLER, K. <strong><a href="https://CRAN.R-project.org/package=dplyr">dplyr: A Grammar of Data Manipulation</a></strong>. [s.l: s.n.]
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -593,7 +684,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     setTimeout(function() {
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');

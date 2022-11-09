@@ -1,0 +1,60 @@
+---
+title: "Filmes da Pixar!"
+format: html
+editor: visual
+knitr:
+  opts_chunk: 
+    message: false
+    warning: false
+    echo: false
+    fig-align: "center"
+    out.width: "80%"
+    dpi: 300
+params:
+  filme: "Vida de Inseto"
+---
+
+```{r}
+# install.packages("dados")
+library(dados)
+library(tidyverse)
+```
+
+```{r}
+filme_filtrado <- pixar_filmes |> 
+  filter(filme == params$filme)
+
+ano_lancamento <- lubridate::year(filme_filtrado$data_lancamento)
+
+filme_bilheteria <- pixar_bilheteria |> 
+    filter(filme == params$filme)
+
+orcamento <- scales::dollar(filme_bilheteria$orcamento, big.mark = ".", decimal.mark = ",") 
+
+bilheteria <- scales::dollar(filme_bilheteria$bilheteria_mundial, big.mark = ".", decimal.mark = ",") 
+
+
+```
+
+
+## `r params$filme` (`r ano_lancamento`)
+
+O filme  `r params$filme` foi lançado em `r ano_lancamento`. O filme teve o orçamento de `r orcamento`, e uma bilheteria mundial de `r bilheteria`.
+
+
+
+```{r}
+#| fig-align: "center"
+grafico <- pixar_bilheteria |>
+  ggplot() +
+  aes(x = orcamento, y = bilheteria_mundial, 
+      color = filme) +
+  geom_point() +
+  gghighlight::gghighlight(filme == params$filme) +
+  theme_light()
+
+grafico
+
+# plotly::ggplotly(grafico)
+```
+

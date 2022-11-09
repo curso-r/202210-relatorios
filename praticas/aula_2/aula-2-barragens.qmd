@@ -1,0 +1,219 @@
+---
+title: "Barragens no Brasil"
+format: html
+editor: visual
+knitr:
+  opts_chunk: 
+    message: false
+    warning: false
+    echo: false
+    # configuracoes interessantes para imagens:
+    fig-align: "center" # alinhamento
+    dpi: 300 # resolução da imagem
+    out-width: "100%" # largura em %
+prefer-html: true    
+bibliography: 
+  - references.bib
+  - referencias.bib
+  - packages.bib
+csl: abnt.csl
+lang: pt
+number-sections: true
+---
+
+```{r setup, include=FALSE}
+# knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+options(scipen = 999)
+```
+
+## Objetivos {#sec-objetivos}
+
+Este relatório tem como objetivo apresentar funcionalidades do *R Markdown* e do *Quarto*, utilizando dados públicos sobre barragens de mineração no Brasil.
+
+Os objetivos específicos da análise são:
+
+-   fazer uma tabela das barragens por estado;
+
+-   fazer um gráfico do número de barragens por categoria de dano potencial associado;
+
+## Materiais e métodos {#sec-metodos}
+
+A base de dados disponibilizada pelo [SIGBM - Sistema de Gestão de Segurança de Barragem de Mineração](https://app.anm.gov.br/SIGBM/Publico/ClassificacaoNacionalDaBarragem) - apresenta dados referentes à barragens de mineração no território Brasileiro.
+
+![](images/paste-3642D2A8.png){fig-align="center" width="40%"}
+
+```{r pacotes}
+# Carregar pacotes:
+library(janitor)
+library(tidyverse)
+library(readxl)
+```
+
+```{r download-data}
+#| eval: false
+#| echo: false
+## # Fazer download da base de dados do dia atual:
+## # url para baixar os dados
+url_request <- "https://app.anm.gov.br/SIGBM/Publico/ClassificacaoNacionalDaBarragem/ExportarExcel"
+##
+## # cria a pasta dados (se não existir)
+fs::dir_create("dados")
+##
+## # funcão que baixa os dados
+httr::POST(url_request, httr::write_disk("dados/sigbm.xlsx", overwrite = TRUE))
+```
+
+```{r carregar-dados}
+# Importar a base de dados:
+# ler os dados baixados
+sigbm <- read_xlsx("dados/sigbm.xlsx", skip = 4) |>
+  clean_names()
+
+```
+
+```{r data-atualizacao}
+data_atualizacao_sigbm <- read_xlsx("dados/sigbm.xlsx",
+                                    col_names = FALSE,
+                                    n_max = 1) |>
+  pull() |>
+  str_extract(":.*-") |>
+  str_remove(":") |>
+  str_remove("-") |>
+  str_trim()
+
+mediana_volume <- sigbm |>
+  mutate(volume = parse_number(
+    volume_atual_m3,
+    locale = locale(decimal_mark = ",", grouping_mark = ".")
+  )) |>
+  summarise(mediana_volume = median(volume, na.rm = TRUE)) |>
+  pull(mediana_volume) |>
+  scales::number(big.mark = ".", decimal.mark = ",")
+
+# sigbm$id_barragem
+# 
+# sigbm |> 
+#   # ... |> 
+#   pull(id_barragem)
+```
+
+## Barragens de mineração no Brasil
+
+A base do SIGBM foi obtida no dia `r data_atualizacao_sigbm` , e apresentou informações referentes à `r nrow(sigbm)` barragens de mineração. A mediana do volume armazenado nas barragens é `r mediana_volume` m3.
+
+```{r}
+#| label: tbl-top10
+dados_tabela <- sigbm |>
+  count(uf, sort = TRUE) |>
+  slice(1:10) |>
+  select(`Estado` = uf, `Número de barragens` = n) 
+
+dados_tabela |>
+  gt::gt(caption = "Dez estados brasileiros com mais barragens cadastradas no SIG-BM")
+
+# knitr::kable(), DT::datatable() , reactable::reactable(), flextable::flextable()
+# 
+# knitr::kable(dados_tabela)
+# 
+# kableExtra::kable(dados_tabela)
+# 
+# DT::datatable(dados_tabela) # nao use com PDF ou word!!
+# 
+# reactable::reactable(dados_tabela) # nao use com PDF ou word!!
+# 
+# flextable::flextable(dados_tabela) # boa pra word!
+ 
+```
+
+```{r}
+#| fig-cap: "Gráfico de dano potencial associado de barragens de mineração no Brasil."
+#| label: fig-dpa
+
+
+sigbm |>
+  count(dano_potencial_associado) |>
+    mutate(
+    dano_potencial_associado = if_else(
+      dano_potencial_associado == "N/A",
+      "Não se aplica",
+      dano_potencial_associado
+    ),
+    dano_potencial_associado = factor(
+      dano_potencial_associado,
+      levels = c("Não se aplica", "Baixo", "Médio", "Alto")
+    )
+  ) |>
+  ggplot() +
+  aes(x = dano_potencial_associado, y = n) +
+  geom_col(fill = "lightblue") +
+  theme_bw() +
+  labs(x = "Dano potencial associado (DPA)", y = "Quantidade de barragens",
+       title = "Dano potencial associado de barragens de mineração no Brasil", caption = "Fonte: Dados extraídos do SIGBM.")
+
+
+```
+
+## Barragens em MG
+
+```{r}
+tabela_empreendedores <- sigbm |> 
+  filter(uf == "MG") |> 
+  group_by(nome_do_empreendedor) |> 
+  summarise(
+    quantidade = n(),
+    barragens = paste0(nome_da_barragem, collapse = ", ")
+    ) |> 
+  arrange(desc(quantidade)) |> 
+  slice(1:10)
+```
+
+```{r}
+# tabela_empreendedores |> 
+#   knitr::kable()
+# 
+# tabela_empreendedores |> 
+#   flextable::flextable() |> 
+#   flextable::autofit()
+
+# tabela_empreendedores |> 
+#   reactable::reactable()
+
+```
+
+## EXTRAS!
+
+### Equações
+
+A equação $4! = 4 \cdot 3 \cdot 2 \cdot 1$ diz que
+
+A equação $$4! = 4 \cdot 3 \cdot 2 \cdot 1$$ diz que
+
+### Referências
+
+-   Citando papers
+
+Segundo @leao2022a, [@leao2022a], [-@leao2022a]
+
+[@silvaSegurancaBarragensOs2021; @leao2022a]
+
+@silvaSegurancaBarragensOs2021
+
+-   Citar pacotes!
+
+@r-base
+
+@r-tidyverse
+
+diversos pacotes foram usados [@R-janitor; @R-dplyr]
+
+```{r}
+knitr::write_bib(file = "packages.bib")
+```
+
+### Referência cruzada
+
+Na tabela @tbl-top10 vemos que o estado com o maior número de barragens é MG.
+
+No gráfico @fig-dpa vemos que ...
+
+Nas secoes @sec-metodos e @sec-objetivos ....
