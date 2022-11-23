@@ -3,23 +3,23 @@
 
 ## Informações importantes
 
--   Nosso blog: <https://curso-r.com/blog/>
+- Nosso blog: <https://curso-r.com/blog/>
 
--   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
-    [Zen do R](https://curso-r.github.io/zen-do-r/)
+- Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+  [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
--   perguntas gerais sobre o curso deverão ser feitas no Classroom.
+- perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
--   perguntas sobre R, principalmente as que envolverem código, deverão
-    ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
+- perguntas sobre R, principalmente as que envolverem código, deverão
+  ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
--   [Slides](https://curso-r.github.io/main-relatorios/slides/)
+- [Slides](https://curso-r.github.io/main-relatorios/slides/)
 
 ## Práticas
 
@@ -27,6 +27,7 @@ Fora do horário de aula ou monitoria:
 |:---------------------------------------------------------------------------------|:----------------------------------------------------------------------|
 | [aula_1](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_1) | [aula_1](https://curso-r.github.io/202210-relatorios/praticas/aula_1) |
 | [aula_2](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_2) | [aula_2](https://curso-r.github.io/202210-relatorios/praticas/aula_2) |
+| [aula_3](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_3) | [aula_3](https://curso-r.github.io/202210-relatorios/praticas/aula_3) |
 
 ## Material extra
 
@@ -81,6 +82,22 @@ relacionadas com o conteúdo da aula).
 |    2 | Gráficos           | [pacote esquisse para ajudar a fazer ggplots](https://github.com/dreamRs/esquisse)                                                                           |
 |    2 | Tabelas            | [Pacote flextable para tabelas pra word](https://davidgohel.github.io/flextable/)                                                                            |
 |    2 | Equações           | [Detexify - Site que ajuda a escrever equações em latex](https://detexify.kirelabs.org/classify.html)                                                        |
+|    3 | CSS                | [Curadoria de HTML e CSS](https://curadoria-front-end-roadmap-git-main-notnotgabriel.vercel.app/html)                                                        |
+|    3 | HTML e CSS         | [Folha de cola (cheatsheet): CSS](https://htmlcheatsheet.com/css/)                                                                                           |
+|    3 | HTML e CSS         | [Folha de cola (cheatsheet): HTML](https://htmlcheatsheet.com)                                                                                               |
+|    3 | Deploy             | [Netlify Drop](https://app.netlify.com/drop)                                                                                                                 |
+|    3 | Web                | [(Git) Livro Zen do R: Git e GitHub](https://curso-r.github.io/zen-do-r/git-github.html)                                                                     |
+|    3 | Web                | [(Git) Material sobre Git e GitHub no RStudio](https://curso-r.github.io/main-pacotes/slides/#53)                                                            |
+|    3 | HTML e CSS         | [Cores em hexadecimal](https://htmlcolorcodes.com/)                                                                                                          |
+|    3 | HTML e CSS         | [Google fonts](https://fonts.google.com/)                                                                                                                    |
+|    3 | Office             | [Pacote officer](https://ardata-fr.github.io/officeverse/officer-for-powerpoint.html)                                                                        |
+|    3 | Office             | [Post - como usar templates para word](https://blog.curso-r.com/posts/2021-12-23-word-rmarkdown/)                                                            |
+|    3 | HTML e CSS         | [Font awesome - icones](https://fontawesome.com/icons)                                                                                                       |
+|    3 | Compartilhamento   | [Quarto Pub - disponibilizar HTML feito com quarto](https://quartopub.com/)                                                                                  |
+|    3 | Customização       | [Usando CSS com Quarto](https://quarto.org/docs/visual-editor/content.html#css-styles)                                                                       |
+|    3 | GitHub             | [Repositórios da curso-r no github](https://github.com/orgs/curso-r/repositories?type=all)                                                                   |
+|    3 | GitHub             | [Post sobre nomear a branch como main](https://lente.dev/posts/main-branch/)                                                                                 |
+|    3 | Customização       | [Officeverse - Outra forma de customizar arquivos docx](https://ardata-fr.github.io/officeverse/officedown-for-word.html)                                    |
 
 ## Redes sociais da Curso-R
 

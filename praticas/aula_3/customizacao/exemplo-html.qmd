@@ -1,0 +1,53 @@
+---
+title: "Experimentando customização"
+format: 
+  html:
+    css: "styles.css"
+editor: visual
+---
+
+<!-- ```{css} -->
+<!-- h1, h2, h3 { -->
+<!--   font-family: "Comic Sans MS"; -->
+<!--   color: #850dfd; -->
+<!-- } -->
+
+<!-- code { -->
+<!--   color: #da6bb9; -->
+<!--   font-family: "Courier New"; -->
+<!--   font-weight: bold; -->
+<!-- } -->
+<!-- ``` -->
+
+
+## Quarto
+
+::: informacoes
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+:::
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of [embedded code]{.informacoes}. You can embed code like this:
+
+```{r}
+1 + 1
+
+nome <- "Beatriz"
+
+TRUE != FALSE
+
+6 >= 7
+
+dplyr::starwars |> 
+  dplyr::count(species, sort = TRUE)
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

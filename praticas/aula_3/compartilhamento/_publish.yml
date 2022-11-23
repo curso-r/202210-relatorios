@@ -1,0 +1,4 @@
+- source: index.qmd
+  quarto-pub:
+    - id: 04434970-5984-46f4-a94f-09e9ee9f7dab
+      url: 'https://quartopub.com/sites/beamilz/exemplo2'
