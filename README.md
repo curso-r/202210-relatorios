@@ -28,6 +28,7 @@ Fora do horário de aula ou monitoria:
 | [aula_1](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_1) | [aula_1](https://curso-r.github.io/202210-relatorios/praticas/aula_1) |
 | [aula_2](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_2) | [aula_2](https://curso-r.github.io/202210-relatorios/praticas/aula_2) |
 | [aula_3](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_3) | [aula_3](https://curso-r.github.io/202210-relatorios/praticas/aula_3) |
+| [aula_4](https://github.com/curso-r/202210-relatorios/blob/main/praticas/aula_4) | [aula_4](https://curso-r.github.io/202210-relatorios/praticas/aula_4) |
 
 ## Material extra
 
@@ -98,6 +99,27 @@ relacionadas com o conteúdo da aula).
 |    3 | GitHub             | [Repositórios da curso-r no github](https://github.com/orgs/curso-r/repositories?type=all)                                                                   |
 |    3 | GitHub             | [Post sobre nomear a branch como main](https://lente.dev/posts/main-branch/)                                                                                 |
 |    3 | Customização       | [Officeverse - Outra forma de customizar arquivos docx](https://ardata-fr.github.io/officeverse/officedown-for-word.html)                                    |
+|    4 | Quarto             | [Documentação sobre apresentações com Quarto](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)                                             |
+|    4 | Extra              | [Documentação do flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/)                                                                                |
+|    4 | Miscelânea         | [Pacote officedown para rmd que gera word](https://ardata-fr.github.io/officeverse/officedown-for-word.html)                                                 |
+|    4 | Extensões          | [Live sobre Shiny e geração de RMarkdown](https://www.youtube.com/watch?v=tJmfcUC0bgY)                                                                       |
+|    4 | Extensões          | [Quarto - Modelos para artigo científico](https://quarto.org/docs/journals/)                                                                                 |
+|    4 | Extensões          | [Tema da R-Ladies para slides com Quarto](https://github.com/beatrizmilz/quarto-rladies-theme)                                                               |
+|    4 | Extensões          | [Dúvida: como colocar o resultado de um código no proximo slide?](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/)        |
+|    4 | Extensões          | [Apresentação com Quarto](https://beatrizmilz.github.io/rstudioconf2022/)                                                                                    |
+|    4 | Extensões          | [Repositório criado na prática](https://github.com/beatrizmilz/gatitosQuartoActions)                                                                         |
+|    4 | Extensões          | [Apresentação feita na prática da aula](https://beatrizmilz.github.io/gatitosQuartoActions/sigbm.html)                                                       |
+|    4 | Extensões          | [Livros com Quarto](https://quarto.org/docs/books/)                                                                                                          |
+|    4 | Extensões          | [Documentação do pacote flexdashboard](https://pkgs.rstudio.com/flexdashboard//)                                                                             |
+|    4 | rmarkdown          | [Temas do pacote flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/using.html#appearance)                                                           |
+|    4 | Extras             | [highcharts - gráficos que fazem voosh](https://www.highcharts.com/blog/tutorials/highcharts-for-r-users/)                                                   |
+|    4 | Extensões          | [Material sobre criar apresentações com quarto](https://beamilz.com/talks/pt/2022-latinr-quarto-tutorial/)                                                   |
+|    4 | Extensões          | [Customizar tema de apresentação com Quarto](https://quarto.org/docs/presentations/revealjs/themes.html)                                                     |
+|    4 | GitHub Actions     | [GitHub Actions - Apresentacao](https://beamilz.com/talks/en/2022-gha-rladies-abuja/)                                                                        |
+|    4 | GitHub Actions     | [Documentação sobre GitHub Actions](https://docs.github.com/pt/actions/using-workflows/about-workflows)                                                      |
+|    4 | GitHub Actions     | [Posit Package Manager](https://packagemanager.rstudio.com/client/#/)                                                                                        |
+|    4 | GitHub Actions     | [GH Actions para Quarto](https://github.com/quarto-dev/quarto-actions)                                                                                       |
+|    4 | GitHub Actions     | [Repositório criado na aula 4](https://github.com/curso-r/exemplo-quarto-aula-relatorios)                                                                    |
 
 ## Redes sociais da Curso-R
 

@@ -5,7 +5,7 @@ params:
   trilha_clean: visualizacao
   turma: 202210-relatorios
   nome_curso: Relatórios e apresentações
-  num_aula: '3'
+  num_aula: '4'
   download_material: 'FALSE'
 ---
 
