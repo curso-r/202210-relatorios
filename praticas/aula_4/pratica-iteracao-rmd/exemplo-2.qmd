@@ -1,0 +1,37 @@
+---
+title: "Lista de filmes"
+format: html
+editor: visual
+knitr: 
+  opts_chunk: 
+    echo: false
+    message: false
+---
+
+```{r}
+library(dados)
+# pixar_filmes
+
+```
+
+```{r }
+#| results: asis
+
+gerar_desc_filme <- function(filme_filtro){
+  pixar_filtrado <- pixar_filmes |> 
+  dplyr::filter(filme == filme_filtro)
+
+  cat(knitr::knit_child("child-iteracao.qmd", 
+                    envir = environment(), 
+                    quiet = TRUE), sep = "\n \n <hr>")
+}
+
+# gerar_desc_filme("Carros")
+
+
+lista_filmes <- sort(unique(pixar_filmes$filme))
+
+lista_filmes |> 
+  purrr::walk(gerar_desc_filme)
+
+```

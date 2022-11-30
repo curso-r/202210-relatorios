@@ -1,0 +1,38 @@
+---
+title: "Relatórios de filmes da pixar!"
+author: "Beatriz"
+date: "2022-11-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dados)
+
+# pixar_filmes
+```
+
+
+```{r include=FALSE}
+gerar_secao_filme <- function(filme_filtrar) {
+
+  dados_filtrados_por_filme <- dados::pixar_filmes |>
+    dplyr::filter(filme == filme_filtrar)
+
+  cat(knitr::knit_child("secao_filme.Rmd",
+                        envir = environment(),
+                        quiet = TRUE),
+      sep = "\n \n <hr/>")
+}
+```
+
+```{r results='asis'}
+filmes_unicos <- unique(pixar_filmes$filme) |> sort()
+
+
+filmes_unicos |>
+  purrr::walk(gerar_secao_filme)
+```

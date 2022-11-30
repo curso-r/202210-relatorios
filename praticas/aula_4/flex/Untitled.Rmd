@@ -1,0 +1,59 @@
+---
+title: "Filmes da pixar"
+output: 
+  flexdashboard::flex_dashboard:
+    theme:
+      bg: "#101010"
+      fg: "#FDF7F7" 
+      primary: "#ED79F9"
+      base_font:
+        google: Prompt
+      code_font:
+        google: JetBrains Mono
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(dados)
+library(highcharter)
+# Install thematic and un-comment for themed static plots (i.e., ggplot2)
+# thematic::thematic_rmd()
+```
+
+Column {data-width=650 .tabset}
+-----------------------------------------------------------------------
+
+### Filmes segundo a bilheteria
+
+```{r}
+pixar_bilheteria |> 
+  dplyr::select(filme, bilheteria_mundial) |> 
+  dplyr::arrange(desc(bilheteria_mundial)) |> 
+  # tibble::rowid_to_column() |> 
+  # dplyr::filter(rowid %in% 1:10) |> 
+  DT::datatable()
+```
+
+### Chart B
+
+```{r}
+hchart(pixar_avalicao_publico$nota_rotten_tomatoes)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart C
+
+```{r}
+
+```
+
+### Chart d
+
+```{r}
+
+```
+

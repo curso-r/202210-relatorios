@@ -1,0 +1,16 @@
+### `r filme_filtro`
+           
+Data de lançamento: `r format(pixar_filtrado$data_lancamento[1], '%d/%m/%Y')` 
+
+
+```{r}
+pixar_bilheteria |> 
+  dplyr::select(filme, bilheteria_mundial) |> 
+  dplyr::arrange(desc(bilheteria_mundial)) |> 
+  tibble::rowid_to_column() |> 
+  dplyr::filter(rowid %in% 1:10 | filme == filme_filtro) |> 
+  knitr::kable()
+```
+
+
+
