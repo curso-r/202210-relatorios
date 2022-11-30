@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Boas vindas ao exemplo!",
+    "section": "",
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "slide.html#dados",
+    "href": "slide.html#dados",
+    "title": "Exemplo de apresentacao",
+    "section": "Dados",
+    "text": "Dados\nOs dados originais são do pacote pixarfilms (Leung 2021), e foram traduzidos no pacote dados (Quiroga et al. 2022).\n\n\nlibrary(dados)\nlibrary(tidyverse)\ndplyr::glimpse(pixar_filmes)\n\nRows: 27\nColumns: 5\n$ ordem_lancamento         <chr> \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", …\n$ filme                    <chr> \"Toy Story - Um Mundo de Aventuras\", \"Vida de…\n$ data_lancamento          <date> 1995-11-22, 1998-11-25, 1999-11-24, 2001-11-…\n$ duracao                  <dbl> 81, 95, 92, 92, 100, 115, 117, 111, 98, 96, 1…\n$ classificacao_indicativa <chr> \"Livre\", \"Livre\", \"Livre\", \"Livre\", \"Livre\", …"
+  },
+  {
+    "objectID": "slide.html#filmes-com-maior-bilheteria",
+    "href": "slide.html#filmes-com-maior-bilheteria",
+    "title": "Exemplo de apresentacao",
+    "section": "Filmes com maior bilheteria",
+    "text": "Filmes com maior bilheteria\n\n\n\n\n\nrowid\nfilme\nbilheteria_mundial\n\n\n\n\n1\nOs Incríveis 2\n1242805359\n\n\n2\nToy Story 4\n1073394593\n\n\n3\nToy Story 3\n1066969703\n\n\n4\nProcurando Dory\n1028570889\n\n\n5\nProcurando Nemo\n871014978\n\n\n6\nDivertidamente\n857611174\n\n\n7\nViva - A Vida é Uma Festa\n807082196"
+  },
+  {
+    "objectID": "slide.html#avaliação-pelo-público",
+    "href": "slide.html#avaliação-pelo-público",
+    "title": "Exemplo de apresentacao",
+    "section": "Avaliação pelo público",
+    "text": "Avaliação pelo público"
+  },
+  {
+    "objectID": "slide.html#meus-filmes-favoritos",
+    "href": "slide.html#meus-filmes-favoritos",
+    "title": "Exemplo de apresentacao",
+    "section": "Meus filmes favoritos",
+    "text": "Meus filmes favoritos\n\n\nViva - a vida é uma festa\nRatatouille\nDivertidamente\n\n\n\n\nFilmes favoritos da Bia, Tereza e Bruna"
+  },
+  {
+    "objectID": "slide.html#referências",
+    "href": "slide.html#referências",
+    "title": "Exemplo de apresentacao",
+    "section": "Referências",
+    "text": "Referências\n\n\n\n\n\n\nSlide feito na aula como exemplo - veja o código no github\n\n\n\nLeung, Eric. 2021. pixarfilms: Pixar Films and Achievements. https://CRAN.R-project.org/package=pixarfilms.\n\n\nQuiroga, Riva, Sara Mortara, Beatriz Milz, Andrea Sánchez-Tapia, Alejandra Andrea Tapia Silva, Beatriz Maurer Costa, Jean Prado, Renata Hirota, William Amorim, e Emmanuelle Rodrigues Nunes. 2022. dados: Translate Datasets to Portuguese. https://github.com/cienciadedatos/dados."
+  },
+  {
+    "objectID": "slide.html#top-filmes",
+    "href": "slide.html#top-filmes",
+    "title": "Exemplo de apresentacao",
+    "section": "Top filmes",
+    "text": "Top filmes\n\n\nAqui escrevemos o texto que ficará à esquerda\n\ne aqui fica o texto da coluna à direita :D"
+  },
+  {
+    "objectID": "flexdashboard.html#column-1",
+    "href": "flexdashboard.html#column-1",
+    "title": "Themed dashboard",
+    "section": "Column",
+    "text": "Column\n\nChart C\n\n\n\n\n\nChart D"
+  }
+]

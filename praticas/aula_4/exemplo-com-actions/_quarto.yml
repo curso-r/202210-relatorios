@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: "docs/"
+
+lang: "pt"  
+  
+
+website:
+  title: "Exemplo para a aula de relatórios"
+  sidebar: true
+  navbar:
+    background: "#b19cd9"
+    left:
+      - href: index.qmd
+        text: Home
+      - slide.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

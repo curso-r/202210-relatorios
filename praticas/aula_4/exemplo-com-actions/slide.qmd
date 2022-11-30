@@ -1,0 +1,82 @@
+---
+title: "Exemplo de apresentacao"
+format: 
+  revealjs:
+    incremental: false
+    footer: "Slide feito na aula como exemplo - veja o código no [github](https://github.com/curso-r/exemplo-quarto-aula-relatorios)"
+    logo: "https://github.com/erictleung/pixarfilms/raw/main/man/figures/logo.png"
+    theme: [default, estilo-slide.scss]
+    
+editor: visual
+references: packages.bib
+bibliography: packages.bib
+---
+
+## Dados
+
+Os dados originais são do pacote pixarfilms [@R-pixarfilms], e foram traduzidos no pacote dados [@R-dados].
+
+. . .
+
+```{r}
+#| echo: true
+library(dados)
+library(tidyverse)
+dplyr::glimpse(pixar_filmes)
+```
+
+## Filmes com maior bilheteria
+
+```{r}
+pixar_bilheteria |> 
+  dplyr::select(filme, bilheteria_mundial) |> 
+  dplyr::arrange(desc(bilheteria_mundial)) |> 
+  tibble::rowid_to_column() |> 
+  dplyr::filter(rowid %in% 1:7) |> 
+  knitr::kable()
+```
+
+## Avaliação pelo público
+
+```{r}
+
+pixar_avalicao_publico |> 
+  dplyr::mutate(filme = forcats::fct_reorder(filme, nota_rotten_tomatoes)) |> 
+  ggplot() +
+  aes(x = nota_rotten_tomatoes, y = filme) +
+  geom_col()
+```
+
+## Meus filmes favoritos
+
+::: incremental
+-   Viva - a vida é uma festa
+
+-   Ratatouille
+
+-   Divertidamente
+
+-   
+:::
+
+::: footer
+Filmes favoritos da Bia, Tereza e Bruna
+:::
+
+## Top filmes
+
+::: columns
+::: {.column width="30%"}
+Aqui escrevemos o texto que ficará à esquerda
+:::
+
+::: {.column width="60%" float="right"}
+e aqui fica o texto da coluna à direita :D
+:::
+:::
+
+## Referências
+
+```{r}
+knitr::write_bib(x = c("dados", "pixarfilms", "tidyverse"), file = "packages.bib")
+```
